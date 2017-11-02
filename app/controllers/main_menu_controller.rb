@@ -1,3 +1,5 @@
+require_relative 'customers_controller.rb'
+
 class MainMenuController
   def display_main_menu
     # Main menu presented to the user
@@ -14,6 +16,7 @@ class MainMenuController
 
     case user_input
     when "1"
+      @customers_controller =
       # Call the method that will diplay the prompts for creating a new customer here.
     when "2"
       # Call the method that will diplay the prompts for choosing an active customer here.

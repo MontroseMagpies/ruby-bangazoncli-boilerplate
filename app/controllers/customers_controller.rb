@@ -1,25 +1,29 @@
-class CustomersController
-  before_action :set_customer, only: [:show, :update]
+require '../models/customer.rb'
 
+class CustomersController
+
+  attr_accessor :name
+
+  def initializer()
+    @new_customer = new_customer
+  end
+
+  @create_customer = NewCustomer.new
   # get active customers
-  def index
+
+  def  (taco)
+  @create_customer[:name] = taco
   end
 
   # GET all customer
   # GET single customer
-  def show
-  end
 
 
   # create customer
-  def create
 
-  end
 
   # update customer
-  def update
 
-  end
 
 end
 
